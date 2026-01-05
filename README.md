@@ -61,6 +61,13 @@ If you want to learn more about building native executables, please consult <htt
 - LangChain4j Ollama ([guide](https://docs.quarkiverse.io/quarkus-langchain4j/dev/index.html)): Provides the basic
   integration of Ollama with LangChain4j
 
+## EasyRAG
+
+- Fonte RAG em `src/main/resources/rag/pacotes-viagem.md`; edite o arquivo para atualizar ofertas e contexto.
+- O assistente consome o RAG em tempo de execução; não precisa recompilar para alterações de conteúdo.
+- Para testar em dev, suba com `./mvnw quarkus:dev` e consulte o endpoint do assistente.
+- Em produção, garanta que o arquivo RAG seja empacotado junto (já fica incluído no jar/nativo).
+
 ## Provided Code
 
 ### REST
